@@ -51,7 +51,7 @@ export default function Ajustes() {
 
           <View style={{flexDirection:"row", margin:5,}}>
             <Image source={require("../../assets/images/UFSC.png")} style={{height:70,width:50,marginHorizontal:20}}/>
-            <Image source={require("../../assets/images/pós.png")} style={{height:58,width:170,marginVertical:15,marginHorizontal:25}}/>
+            <Image source={require("../../assets/images/pos.png")} style={{height:58,width:170,marginVertical:15,marginHorizontal:25}}/>
           </View>
 
     </View>

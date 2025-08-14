@@ -1,8 +1,7 @@
-
 {
   "expo": {
     "name": "T&C App",
-    "slug": "T&C App",
+    "slug": "tc-app",
     "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/images/logostextocontexto.png",
@@ -17,7 +16,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.textoecontexto.app",
+      "bundleIdentifier": "br.ufsc.css.textoecontexto",
       "newArch": false
     },
     "android": {
@@ -25,10 +24,15 @@
         "foregroundImage": "./assets/images/logostextocontexto.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.textoecontexto.app"
+      "package": "br.ufsc.css.textoecontexto"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a56d12e4-271e-47f1-a511-fc0b2c7078df"
+      }
     }
   }
 }

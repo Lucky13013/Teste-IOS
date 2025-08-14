@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2273494BCEE21A832B63E9EC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2C7653114B52EC5561C15F11 /* PrivacyInfo.xcprivacy */; };
 		2D9955CB0A380DA3CB1F3F8C /* libPods-TCApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F28350A54766A2D72437C7C8 /* libPods-TCApp.a */; };
@@ -14,10 +15,21 @@
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		EF6D1E0DC5AE467658A53566 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E0676277E7C9560A6BB553 /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+=======
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		96905EF65AED1B983A6B3ABC /* libPods-TCApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-TCApp.a */; };
+		9C464AED0C914B8F8301F3EA /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF525C93D774667B165A7B3 /* noop-file.swift */; };
+		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* TCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+<<<<<<< HEAD
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TCApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TCApp/Info.plist; sourceTree = "<group>"; };
 		16E0676277E7C9560A6BB553 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-TCApp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -30,6 +42,22 @@
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = TCApp/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* TCApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TCApp-Bridging-Header.h"; path = "TCApp/TCApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		F28350A54766A2D72437C7C8 /* libPods-TCApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TCApp/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TCApp/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TCApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TCApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TCApp/main.m; sourceTree = "<group>"; };
+		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-TCApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E23518DAAD487F9DCB44D8 /* TCApp-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "TCApp-Bridging-Header.h"; path = "TCApp/TCApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		6C2E3173556A471DD304B334 /* Pods-TCApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCApp.debug.xcconfig"; path = "Target Support Files/Pods-TCApp/Pods-TCApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4D352CD337FB3A3BF06240 /* Pods-TCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCApp.release.xcconfig"; path = "Target Support Files/Pods-TCApp/Pods-TCApp.release.xcconfig"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = TCApp/SplashScreen.storyboard; sourceTree = "<group>"; };
+		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-TCApp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		FFF525C93D774667B165A7B3 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "TCApp/noop-file.swift"; sourceTree = "<group>"; };
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +65,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				2D9955CB0A380DA3CB1F3F8C /* libPods-TCApp.a in Frameworks */,
+=======
+				96905EF65AED1B983A6B3ABC /* libPods-TCApp.a in Frameworks */,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +79,7 @@
 		13B07FAE1A68108700A75B9A /* TCApp */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
 				F11748442D0722820044C1D9 /* TCApp-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
@@ -54,6 +87,17 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
 				2C7653114B52EC5561C15F11 /* PrivacyInfo.xcprivacy */,
+=======
+				BB2F792B24A3F905000567C9 /* Supporting */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
+				FFF525C93D774667B165A7B3 /* noop-file.swift */,
+				67E23518DAAD487F9DCB44D8 /* TCApp-Bridging-Header.h */,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			);
 			name = TCApp;
 			sourceTree = "<group>";
@@ -62,11 +106,16 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+<<<<<<< HEAD
 				F28350A54766A2D72437C7C8 /* libPods-TCApp.a */,
+=======
+				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-TCApp.a */,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		35408557A9E6DB544C1C295C /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +124,8 @@
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,8 +140,13 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+<<<<<<< HEAD
 				35408557A9E6DB544C1C295C /* ExpoModulesProviders */,
 				D0B0118A216141B1ECC21325 /* Pods */,
+=======
+				D65327D7A22EEC0BE12398D9 /* Pods */,
+				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -105,6 +161,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		92DBD88DE9BF7D494EA9DA96 /* TCApp */ = {
+			isa = PBXGroup;
+			children = (
+				FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */,
+			);
+			name = TCApp;
+			sourceTree = "<group>";
+		};
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,21 +181,38 @@
 			path = TCApp/Supporting;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		D0B0118A216141B1ECC21325 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				A81F9F7DA194EFF6DF2D2C4D /* Pods-TCApp.debug.xcconfig */,
 				4AC86DE563B97E384E93B8B7 /* Pods-TCApp.release.xcconfig */,
+=======
+		D65327D7A22EEC0BE12398D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C2E3173556A471DD304B334 /* Pods-TCApp.debug.xcconfig */,
+				7A4D352CD337FB3A3BF06240 /* Pods-TCApp.release.xcconfig */,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		F42B8B430FD6BB62009F68E4 /* TCApp */ = {
 			isa = PBXGroup;
 			children = (
 				16E0676277E7C9560A6BB553 /* ExpoModulesProvider.swift */,
 			);
 			name = TCApp;
+=======
+		D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				92DBD88DE9BF7D494EA9DA96 /* TCApp */,
+			);
+			name = ExpoModulesProviders;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,14 +222,24 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TCApp" */;
 			buildPhases = (
+<<<<<<< HEAD
 				0C839211C7FC1CA1D7D53A69 /* [CP] Check Pods Manifest.lock */,
 				925672A2B7AD0D70D881BC97 /* [Expo] Configure project */,
+=======
+				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
+				53C176616B9B075CC1237129 /* [Expo] Configure project */,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+<<<<<<< HEAD
 				5B11FDDE9C5CB4DDFC88B067 /* [CP] Embed Pods Frameworks */,
 				F00B9A783224190317E56F77 /* [CP] Copy Pods Resources */,
+=======
+				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
+				A788712254D56AB1DB29CD48 /* [CP] Embed Pods Frameworks */,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			);
 			buildRules = (
 			);
@@ -162,8 +256,14 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+<<<<<<< HEAD
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Texto & Contexto Enfermagem - UFSC";
+=======
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1620;
+				ORGANIZATIONNAME = "Revista Texto & Contexto Enfermagen - UFSC";
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1250;
@@ -196,7 +296,10 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+<<<<<<< HEAD
 				2273494BCEE21A832B63E9EC /* PrivacyInfo.xcprivacy in Resources */,
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,9 +319,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
 		};
 		0C839211C7FC1CA1D7D53A69 /* [CP] Check Pods Manifest.lock */ = {
+=======
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios relative | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,6 +349,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+<<<<<<< HEAD
 		5B11FDDE9C5CB4DDFC88B067 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +369,9 @@
 			showEnvVarsInLog = 0;
 		};
 		925672A2B7AD0D70D881BC97 /* [Expo] Configure project */ = {
+=======
+		53C176616B9B075CC1237129 /* [Expo] Configure project */ = {
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -277,7 +390,11 @@
 			shellPath = /bin/sh;
 			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-TCApp/expo-configure-project.sh\"\n";
 		};
+<<<<<<< HEAD
 		F00B9A783224190317E56F77 /* [CP] Copy Pods Resources */ = {
+=======
+		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,9 +409,13 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth/GTMAppAuth_Privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher_Core_Privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle",
+<<<<<<< HEAD
 				"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/RCT-Folly_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RNCAsyncStorage/RNCAsyncStorage_resources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/RNSVG/RNSVGFilters.bundle",
+=======
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNCAsyncStorage/RNCAsyncStorage_resources.bundle",
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -314,10 +435,14 @@
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
+<<<<<<< HEAD
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/boost/boost_privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog_privacy.bundle",
+=======
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/RCTI18nStrings.bundle",
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				"${PODS_CONFIGURATION_BUILD_DIR}/react-native-blob-util/ReactNativeBlobUtilPrivacyInfo.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -330,9 +455,13 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMAppAuth_Privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMSessionFetcher_Core_Privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+<<<<<<< HEAD
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCT-Folly_privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNCAsyncStorage_resources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNSVGFilters.bundle",
+=======
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNCAsyncStorage_resources.bundle",
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
@@ -352,10 +481,14 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
+<<<<<<< HEAD
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/boost_privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/glog_privacy.bundle",
+=======
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCTI18nStrings.bundle",
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ReactNativeBlobUtilPrivacyInfo.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +496,27 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCApp/Pods-TCApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+<<<<<<< HEAD
+=======
+		A788712254D56AB1DB29CD48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCApp/Pods-TCApp-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCApp/Pods-TCApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -370,8 +524,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
 				EF6D1E0DC5AE467658A53566 /* ExpoModulesProvider.swift in Sources */,
+=======
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
+				9C464AED0C914B8F8301F3EA /* noop-file.swift in Sources */,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,7 +541,11 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = A81F9F7DA194EFF6DF2D2C4D /* Pods-TCApp.debug.xcconfig */;
+=======
+			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-TCApp.debug.xcconfig */;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -388,7 +553,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = B5N6WNQ2DL;
+=======
+				DEVELOPMENT_TEAM = GR6YTA3754;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -397,7 +566,11 @@
 				INFOPLIST_FILE = TCApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Texto & Contexto App";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,7 +582,11 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufsc.ccs.textoecontexto;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = com.textoecontexto.app;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				PRODUCT_NAME = TCApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TCApp/TCApp-Bridging-Header.h";
@@ -422,7 +599,11 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 4AC86DE563B97E384E93B8B7 /* Pods-TCApp.release.xcconfig */;
+=======
+			baseConfigurationReference = 7A4D352CD337FB3A3BF06240 /* Pods-TCApp.release.xcconfig */;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -430,11 +611,19 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = B5N6WNQ2DL;
 				INFOPLIST_FILE = TCApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Texto & Contexto App";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+=======
+				DEVELOPMENT_TEAM = GR6YTA3754;
+				INFOPLIST_FILE = TCApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Texto & Contexto App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +635,11 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufsc.ccs.textoecontexto;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = com.textoecontexto.app;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				PRODUCT_NAME = TCApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TCApp/TCApp-Bridging-Header.h";
@@ -479,6 +672,10 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+<<<<<<< HEAD
+=======
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -488,6 +685,11 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+<<<<<<< HEAD
+=======
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -503,7 +705,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -511,10 +717,18 @@
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+<<<<<<< HEAD
 				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+=======
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				USE_HERMES = true;
 			};
 			name = Debug;
@@ -542,6 +756,10 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+<<<<<<< HEAD
+=======
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -551,6 +769,11 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+<<<<<<< HEAD
+=======
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -559,16 +782,29 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
+<<<<<<< HEAD
 				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+=======
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -584,7 +820,11 @@
 				13B07F951A680F5B00A75B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
+=======
+			defaultConfigurationName = Debug;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TCApp" */ = {
 			isa = XCConfigurationList;
@@ -593,7 +833,11 @@
 				83CBBA211A601CBA00E9B192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
+=======
+			defaultConfigurationName = Debug;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 		};
 /* End XCConfigurationList section */
 	};

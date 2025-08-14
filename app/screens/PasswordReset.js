@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { 
   View, 
   TextInput, 
@@ -13,14 +14,27 @@ import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 
 // As importações do FontAwesome foram removidas.
+=======
+import { View, TextInput, TouchableOpacity, Text, ActivityIndicator, Alert, Image } from 'react-native';
+import axios from 'axios';
+import { useTranslation } from 'react-i18next';
+import { StyleSheet } from 'react-native';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; // Importando ícones
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 
 const PasswordResetScreen = ({ navigation }) => {
   const { t, i18n } = useTranslation();
   const [code, setCode] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+<<<<<<< HEAD
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+=======
+  const [showNewPassword, setShowNewPassword] = useState(false); // Controle de visibilidade para a nova senha
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false); // Controle de visibilidade para a confirmação de senha
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   const [loading, setLoading] = useState(false);
 
   const handlePasswordReset = async () => {
@@ -66,6 +80,7 @@ const PasswordResetScreen = ({ navigation }) => {
             placeholder={t('password_reset.new_password')}
             value={newPassword}
             onChangeText={setNewPassword}
+<<<<<<< HEAD
             secureTextEntry={!showNewPassword}
           />
           {/* SUBSTITUIÇÃO DO ÍCONE POR TEXTO */}
@@ -73,6 +88,16 @@ const PasswordResetScreen = ({ navigation }) => {
             <Text style={styles.toggleButtonText}>
               {showNewPassword ? 'Ocultar' : 'Mostrar'}
             </Text>
+=======
+            secureTextEntry={!showNewPassword} // Alterna visibilidade da senha
+          />
+          <TouchableOpacity style={styles.eyeIcon} onPress={() => setShowNewPassword(!showNewPassword)}>
+            <FontAwesomeIcon
+              icon={showNewPassword ? faEye : faEyeSlash}
+              size={20}
+              color="#333"
+            />
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
           </TouchableOpacity>
         </View>
 
@@ -82,6 +107,7 @@ const PasswordResetScreen = ({ navigation }) => {
             placeholder={t('password_reset.confirm_password')}
             value={confirmPassword}
             onChangeText={setConfirmPassword}
+<<<<<<< HEAD
             secureTextEntry={!showConfirmPassword}
           />
           {/* SUBSTITUIÇÃO DO ÍCONE POR TEXTO */}
@@ -89,6 +115,16 @@ const PasswordResetScreen = ({ navigation }) => {
             <Text style={styles.toggleButtonText}>
               {showConfirmPassword ? 'Ocultar' : 'Mostrar'}
             </Text>
+=======
+            secureTextEntry={!showConfirmPassword} // Alterna visibilidade da confirmação de senha
+          />
+          <TouchableOpacity style={styles.eyeIcon} onPress={() => setShowConfirmPassword(!showConfirmPassword)}>
+            <FontAwesomeIcon
+              icon={showConfirmPassword ? faEye : faEyeSlash}
+              size={20}
+              color="#333"
+            />
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
           </TouchableOpacity>
         </View>
 
@@ -118,7 +154,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 10,
     borderColor:"#e06eaa",
+<<<<<<< HEAD
     borderWidth: 1, // Adicionado para consistência
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   },
   title: {
     fontSize: 24,
@@ -126,11 +165,19 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   input: {
+<<<<<<< HEAD
     flex: 1, // Modificado para ocupar o espaço disponível
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     padding: 10,
     borderWidth: 1,
     borderColor: '#e06eaa',
     borderRadius: 5,
+<<<<<<< HEAD
+=======
+    marginBottom: 10,
+    width:"90%"
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   },
   input2: {
     padding: 10,
@@ -144,6 +191,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 10,
+<<<<<<< HEAD
     width: '100%', // Adicionado para garantir alinhamento
   },
   // Estilo antigo do ícone removido (eyeIcon)
@@ -154,6 +202,11 @@ const styles = StyleSheet.create({
   toggleButtonText: {
     color: '#e06eaa',
     fontWeight: 'bold',
+=======
+  },
+  eyeIcon: {
+    padding: 10,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   },
   button: {
     backgroundColor: '#e06eaa',
@@ -172,4 +225,8 @@ const styles = StyleSheet.create({
   },
 });
 
+<<<<<<< HEAD
 export default PasswordResetScreen;
+=======
+export default PasswordResetScreen;
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d

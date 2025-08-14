@@ -6,8 +6,12 @@ import {
   View, 
   KeyboardAvoidingView, 
   Platform, 
+<<<<<<< HEAD
   ScrollView,
   StyleSheet 
+=======
+  ScrollView 
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 } from 'react-native';
 import React, { useState } from 'react';
 import axios from 'axios';
@@ -15,8 +19,14 @@ import { Text } from '../../components/Themed';
 import { useNavigation } from '@react-navigation/native';
 import '../../constants/i18n.js';
 import { useTranslation } from 'react-i18next';
+<<<<<<< HEAD
 
 // As importações do FontAwesome foram removidas.
+=======
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; // Importação dos ícones
+import { StyleSheet } from 'react-native';
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 
 export default function Cadastro() {
 
@@ -28,8 +38,13 @@ export default function Cadastro() {
   const [email, setemail] = useState('');
   const [senha, setsenha] = useState('');
   const [confirmarSenha, setconfirmarSenha] = useState('');
+<<<<<<< HEAD
   const [senhaVisivel, setSenhaVisivel] = useState(false);
   const [confirmarSenhaVisivel, setConfirmarSenhaVisivel] = useState(false);
+=======
+  const [senhaVisivel, setSenhaVisivel] = useState(false); // Estado para controle da visibilidade da senha
+  const [confirmarSenhaVisivel, setConfirmarSenhaVisivel] = useState(false); // Estado para controle da visibilidade da confirmação de senha
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   const [loading, setLoading] = useState(false);
   const navigation = useNavigation();
 
@@ -73,7 +88,11 @@ export default function Cadastro() {
     >
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <View style={styles.inner}>
+<<<<<<< HEAD
           <Image source={require('../../assets/images/Kit Portal de Periódicos_Thumbnail.png')} style={styles.image3}></Image>
+=======
+          
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 
           <View style={styles.conteiner_loguin}>
             <View style={styles.inputContainer}>
@@ -102,6 +121,7 @@ export default function Cadastro() {
                 placeholder={Senha}
                 value={senha}
                 onChangeText={(texto) => setsenha(texto)}
+<<<<<<< HEAD
                 secureTextEntry={!senhaVisivel}
                 autoCapitalize="none"
               />
@@ -110,6 +130,17 @@ export default function Cadastro() {
                 <Text style={styles.toggleButtonText}>
                   {senhaVisivel ? 'Ocultar' : 'Mostrar'}
                 </Text>
+=======
+                secureTextEntry={!senhaVisivel} // Controle de visibilidade da senha
+                autoCapitalize="none"
+              />
+              <TouchableOpacity style={styles.eyeIcon} onPress={togglePasswordVisibility}>
+                <FontAwesomeIcon
+                  icon={senhaVisivel ? faEye : faEyeSlash} // Alterna entre os ícones de olho
+                  size={20}
+                  color="#333"
+                />
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
               </TouchableOpacity>
             </View>
 
@@ -119,6 +150,7 @@ export default function Cadastro() {
                 placeholder={Confirmar}
                 value={confirmarSenha}
                 onChangeText={(texto) => setconfirmarSenha(texto)}
+<<<<<<< HEAD
                 secureTextEntry={!confirmarSenhaVisivel}
                 autoCapitalize="none"
               />
@@ -127,6 +159,17 @@ export default function Cadastro() {
                 <Text style={styles.toggleButtonText}>
                   {confirmarSenhaVisivel ? 'Ocultar' : 'Mostrar'}
                 </Text>
+=======
+                secureTextEntry={!confirmarSenhaVisivel} // Controle de visibilidade da confirmação de senha
+                autoCapitalize="none"
+              />
+              <TouchableOpacity style={styles.eyeIcon} onPress={toggleConfirmPasswordVisibility}>
+                <FontAwesomeIcon
+                  icon={confirmarSenhaVisivel ? faEye : faEyeSlash} // Alterna entre os ícones de olho
+                  size={20}
+                  color="#333"
+                />
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
               </TouchableOpacity>
             </View>
 
@@ -166,6 +209,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     borderWidth: 1,
+<<<<<<< HEAD
+=======
+    borderRadius: 8,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     borderColor: '#e06eaa',
     elevation: 5,
   },
@@ -199,15 +246,22 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
   },
+<<<<<<< HEAD
   // Estilo antigo do ícone removido (eyeIcon)
   // Novo estilo para o botão de texto
   toggleButton: {
+=======
+  eyeIcon: {
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     padding: 10,
     justifyContent: 'center',
     alignItems: 'center',
   },
+<<<<<<< HEAD
   toggleButtonText: {
     color: '#e06eaa',
     fontWeight: 'bold',
   },
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 });

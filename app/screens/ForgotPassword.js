@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fef6ff',
   },
   container1: {
+<<<<<<< HEAD
     width: '90%',
     backgroundColor: '#ffffff',
     padding: 25,
@@ -73,6 +74,12 @@ const styles = StyleSheet.create({
     elevation: 5,
     borderWidth: 1,
     borderColor: '#e0d1e0'
+=======
+    padding:15,
+    width:"90%",
+    borderRadius:10,
+    backgroundColor: '#fff',
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   },
   text: {
     fontSize: 20,

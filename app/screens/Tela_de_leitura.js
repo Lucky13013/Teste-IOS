@@ -6,7 +6,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import RNFS from 'react-native-fs';
+<<<<<<< HEAD
 // import Share from 'react-native-share'; // A importação já está comentada
+=======
+import Share from 'react-native-share'; // Importar biblioteca de compartilhamento
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 import { check, request, PERMISSIONS, RESULTS } from 'react-native-permissions';
 
 const Tela_de_leitura = ({ route }) => {
@@ -18,11 +22,15 @@ const Tela_de_leitura = ({ route }) => {
   const navigation = useNavigation();
 
   const openLink = (url) => {
+<<<<<<< HEAD
     if (url) {
         Linking.openURL(url);
     } else {
         Alert.alert('Erro', 'Nenhum link HTML disponível para este artigo.');
     }
+=======
+    Linking.openURL(url);
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   };
 
   const parseJson = (jsonString) => {
@@ -37,7 +45,14 @@ const Tela_de_leitura = ({ route }) => {
   const checkFavorite = async () => {
     try {
       const token = await AsyncStorage.getItem('token');
+<<<<<<< HEAD
       if (!token) return;
+=======
+
+      if (!token) {
+        return;
+      }
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 
       const response = await fetch('https://textocontexto.pythonanywhere.com/api/list-favorites/', {
         method: 'GET',
@@ -47,17 +62,31 @@ const Tela_de_leitura = ({ route }) => {
         },
       });
 
+<<<<<<< HEAD
       if (!response.ok) {
         console.error('Erro ao verificar favoritos:', response.status);
+=======
+      if (response.status === 401) {
+        console.error('Unauthorized: Check your token');
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
         return;
       }
 
       const data = await response.json();
+<<<<<<< HEAD
       if (data.favorites && data.favorites.includes(article.id)) {
         setIsFavorite(true);
       }
     } catch (error) {
       console.error('Erro ao verificar favoritos:', error);
+=======
+
+      if (data.favorites.includes(article.id)) {
+        setIsFavorite(true);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     }
   };
 
@@ -77,6 +106,7 @@ const Tela_de_leitura = ({ route }) => {
         },
       });
 
+<<<<<<< HEAD
       if (!response.ok) {
         console.error('Erro ao alternar favorito:', response.status);
         return;
@@ -87,6 +117,19 @@ const Tela_de_leitura = ({ route }) => {
       setIsFavorite(prevState => !prevState);
     } catch (error) {
       console.error('Erro ao alternar favorito:', error);
+=======
+      if (response.status === 401) {
+        console.error('Unauthorized: Check your token');
+        return;
+      }
+
+      const data = await response.json();
+      console.log(data.message);
+
+      setIsFavorite(prevState => !prevState);
+    } catch (error) {
+      console.error('Error:', error);
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     }
   };
 
@@ -107,6 +150,7 @@ const Tela_de_leitura = ({ route }) => {
   const autoresTexto = autores ? autores.map(a => `${a.given_names} ${a.surname}`).join(', ') : 'Autores não disponíveis';
   const linkHtml = linksHtml && linksHtml.html && linksHtml.html[idioma] ? linksHtml.html[idioma] : null;
 
+<<<<<<< HEAD
   const requestStoragePermission = async () => {
     if (Platform.OS === 'android') {
         try {
@@ -122,6 +166,48 @@ const Tela_de_leitura = ({ route }) => {
       const status = await check(PERMISSIONS.IOS.PHOTO_LIBRARY);
       if (status !== RESULTS.GRANTED) {
         const result = await request(PERMISSIONS.IOS.PHOTO_LIBRARY);
+=======
+  // Sistemas para download --------------------------------------------------
+
+  const requestStoragePermission = async () => {
+    if (Platform.OS === 'android') {
+      const androidVersion = parseInt(Platform.Version, 10);
+      
+      try {
+        if (androidVersion < 29) {
+          const granted = await PermissionsAndroid.request(
+            PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
+            {
+              title: 'Permissão de Armazenamento',
+              message: 'O aplicativo precisa de acesso ao armazenamento para baixar arquivos.',
+              buttonNeutral: 'Pergunte-me depois',
+              buttonNegative: 'Cancelar',
+              buttonPositive: 'OK',
+            }
+          );
+          return granted === PermissionsAndroid.RESULTS.GRANTED;
+        } else {
+          const granted = await PermissionsAndroid.request(
+            PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
+            {
+              title: 'Permissão de Leitura',
+              message: 'O aplicativo precisa de acesso ao armazenamento para baixar arquivos.',
+              buttonNeutral: 'Pergunte-me depois',
+              buttonNegative: 'Cancelar',
+              buttonPositive: 'OK',
+            }
+          );
+          return granted === PermissionsAndroid.RESULTS.GRANTED;
+        }
+      } catch (err) {
+        console.warn(err);
+        return false;
+      }
+    } else {
+      const status = await check(PERMISSIONS.IOS.MEDIA_LIBRARY);
+      if (status !== RESULTS.GRANTED) {
+        const result = await request(PERMISSIONS.IOS.MEDIA_LIBRARY);
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
         return result === RESULTS.GRANTED;
       }
       return true;
@@ -135,7 +221,17 @@ const Tela_de_leitura = ({ route }) => {
       return;
     }
   
+<<<<<<< HEAD
     const path = `${RNFS.DocumentDirectoryPath}/${filename}`;
+=======
+    const path = Platform.OS === 'android' && parseInt(Platform.Version, 10) >= 29
+      ? `${RNFS.DocumentDirectoryPath}/${filename}`
+      : `${RNFS.DownloadDirectoryPath}/${filename}`;
+  
+    if (Platform.OS === 'ios') {
+      path = `${RNFS.DocumentDirectoryPath}/${filename}`;
+    }
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   
     try {
       const response = await RNFS.downloadFile({
@@ -144,25 +240,40 @@ const Tela_de_leitura = ({ route }) => {
       }).promise;
   
       if (response.statusCode === 200) {
+<<<<<<< HEAD
         Alert.alert('Sucesso', `PDF guardado em: ${path}`);
         
         // A funcionalidade de partilha foi comentada para depuração
         /*
+=======
+        Alert.alert('Sucesso', 'PDF baixado com sucesso.');
+        
+        // Compartilhe o PDF para garantir acesso direto
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
         await Share.open({
           url: `file://${path}`,
           type: 'application/pdf',
           title: 'Abrir PDF',
         });
+<<<<<<< HEAD
         */
       } else {
         Alert.alert('Erro', 'Falha ao descarregar o PDF.');
       }
     } catch (error) {
       Alert.alert('Erro', 'Falha ao descarregar o PDF.');
+=======
+      } else {
+        Alert.alert('Erro', 'Falha ao baixar o PDF.');
+      }
+    } catch (error) {
+      Alert.alert('Erro', 'Falha ao baixar o PDF.');
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
       console.error(error);
     }
   };
 
+<<<<<<< HEAD
   const updatedPdfUrl = article.link_pdf
     .replace(/lng=[^&]*/, `lng=${i18n.language}`)
     .replace(/tlng=[^&]*/, `tlng=${i18n.language}`);
@@ -171,11 +282,28 @@ const Tela_de_leitura = ({ route }) => {
   const shareArticle = async () => {
       Alert.alert('Funcionalidade Desativada', 'A partilha está temporariamente desativada para depuração.');
     /*
+=======
+  //--------------------------------------------------------
+
+  const pdfUrl = article.link_pdf;
+
+  // Atualizar o link com a linguagem do i18n
+  const updatedPdfUrl = pdfUrl
+    .replace(/lng=[^&]*/, `lng=${i18n.language}`)
+    .replace(/tlng=[^&]*/, `tlng=${i18n.language}`);
+
+  // Função de compartilhamento
+  const shareArticle = async () => {
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     const shareOptions = {
       title: tituloT,
       message: `${tituloT}\n\n${resumoTexto}\n\n${linkHtml}`,
       url: linkHtml,
+<<<<<<< HEAD
       subject: tituloT,
+=======
+      subject: tituloT, // para o email
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     };
 
     try {
@@ -183,7 +311,10 @@ const Tela_de_leitura = ({ route }) => {
     } catch (error) {
       console.log('Error:', error);
     }
+<<<<<<< HEAD
     */
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   };
 
   return (
@@ -219,7 +350,10 @@ const Tela_de_leitura = ({ route }) => {
           <Ionicons name={isFavorite ? 'star' : 'star-outline'} size={30} color="#fff" />
         </TouchableOpacity>
 
+<<<<<<< HEAD
         {/* O botão de partilha foi mantido, mas a sua função agora mostra um alerta */}
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
         <TouchableOpacity onPress={shareArticle}>
           <Ionicons name="share-social" size={30} color="#fff" />
         </TouchableOpacity>
@@ -272,7 +406,11 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     padding: 16,
+<<<<<<< HEAD
     paddingBottom: 32,
+=======
+    paddingBottom: 32, // Extra padding para evitar conteúdo cortado
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   },
   tipetext: {
     fontWeight: "bold",

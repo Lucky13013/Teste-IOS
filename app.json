@@ -1,8 +1,13 @@
 {
   "expo": {
     "name": "T&C App",
+<<<<<<< HEAD
     "slug": "tc-app",
     "version": "1.0.4",
+=======
+    "slug": "T&C App",
+    "version": "1.0.0",
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     "orientation": "portrait",
     "icon": "./assets/images/logostextocontexto.png",
     "userInterfaceStyle": "light",
@@ -16,14 +21,19 @@
     ],
     "ios": {
       "supportsTablet": true,
+<<<<<<< HEAD
       "bundleIdentifier": "br.ufsc.css.textoecontexto",
       "newArch": false
+=======
+      "bundleIdentifier": "com.textoecontexto.app"
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logostextocontexto.png",
         "backgroundColor": "#ffffff"
       },
+<<<<<<< HEAD
       "package": "br.ufsc.css.textoecontexto"
     },
     "web": {
@@ -33,6 +43,12 @@
       "eas": {
         "projectId": "a56d12e4-271e-47f1-a511-fc0b2c7078df"
       }
+=======
+      "package": "com.textoecontexto.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     }
   }
 }

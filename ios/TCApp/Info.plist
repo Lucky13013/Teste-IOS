@@ -19,7 +19,11 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
+<<<<<<< HEAD
 	<string>1.0.4</string>
+=======
+	<string>1.0.0</string>
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -33,8 +37,11 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+<<<<<<< HEAD
 	<key>LSMinimumSystemVersion</key>
 	<string>12.0</string>
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -44,11 +51,20 @@
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
+<<<<<<< HEAD
+=======
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allow $(PRODUCT_NAME) to access your microphone</string>
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 	<key>UILaunchStoryboardName</key>
 	<string>SplashScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
+<<<<<<< HEAD
 		<string>arm64</string>
+=======
+		<string>armv7</string>
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 	</array>
 	<key>UIRequiresFullScreen</key>
 	<false/>
@@ -56,6 +72,7 @@
 	<string>UIStatusBarStyleDefault</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
+<<<<<<< HEAD
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
@@ -65,6 +82,12 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+=======
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 	</array>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>

@@ -1,6 +1,9 @@
 {
   "greeting": "Olá!",
+<<<<<<< HEAD
   "Carregando": "Carregando...",
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 
   "pages": {
     "Pesquisar": "Pesquisar",

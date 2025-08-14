@@ -4,14 +4,21 @@ import axios from 'axios';
 import { useNavigation } from '@react-navigation/native';
 import FavoriteStar from '../../components/ToggleFavorite';
 import { useTranslation } from 'react-i18next';
+<<<<<<< HEAD
 import '../../constants/i18n.js';
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 
 export default function ArticleList({ route }) {
   const { fromDate, untilDate } = route.params;
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
+<<<<<<< HEAD
   const [refreshing, setRefreshing] = useState(false); // Estado de refresh
   const { t, i18n } = useTranslation();
+=======
+  const { i18n } = useTranslation();
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   const navigation = useNavigation();
   const idioma = i18n.language;
 
@@ -19,10 +26,15 @@ export default function ArticleList({ route }) {
     try {
       return JSON.parse(jsonString.replace(/\\/g, '').replace(/'/g, '"'));
     } catch (e) {
+<<<<<<< HEAD
+=======
+      
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
       return null;
     }
   };
 
+<<<<<<< HEAD
   const fetchArticles = async () => {
     try {
       const response = await axios.get(`https://textocontexto.pythonanywhere.com/api/artigos_por_ano/`, {
@@ -43,6 +55,23 @@ export default function ArticleList({ route }) {
   };
 
   useEffect(() => {
+=======
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const response = await axios.get(`https://textocontexto.pythonanywhere.com/api/artigos_por_ano/`, {
+          params: {
+            year: fromDate
+          }
+        });
+        setArticles(response.data);
+        setLoading(false);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     fetchArticles();
   }, [fromDate, untilDate]);
 
@@ -51,7 +80,11 @@ export default function ArticleList({ route }) {
     if (typeof titulo === 'string') {
       titulo = parseJson(titulo);
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     return (
       <TouchableOpacity
         style={styles.article}
@@ -69,15 +102,22 @@ export default function ArticleList({ route }) {
 
   return (
     <View style={styles.container}>
+<<<<<<< HEAD
       {loading ? (
         <Text>{t('Carregando')}</Text>
       ) : (
+=======
+      {loading ? <Text>Loading...</Text> : (
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
         <FlatList
           data={articles}
           renderItem={renderItem}
           keyExtractor={(item) => item.id.toString()}
+<<<<<<< HEAD
           onRefresh={handleRefresh}
           refreshing={refreshing}
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
         />
       )}
     </View>
@@ -96,6 +136,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 8,
     borderWidth: 1,
+<<<<<<< HEAD
+=======
+    borderRadius: 5,
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     borderColor: '#e06eaa',
     elevation: 5,
   },
@@ -134,9 +178,12 @@ const styles = StyleSheet.create({
   estrela: {
     flexDirection: 'row',
     justifyContent: 'flex-end'
+<<<<<<< HEAD
   },
   date: {
     color: '#666',
     marginTop: 4,
+=======
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
   }
 });

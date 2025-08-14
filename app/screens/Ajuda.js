@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { Image,ScrollView,Linking,TouchableOpacity, Alert  } from 'react-native';
+=======
+import { Image,ScrollView,Linking,TouchableOpacity } from 'react-native';
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
 
 
 import { Text, View } from '../../components/Themed'
@@ -14,8 +18,13 @@ export default function Ajuda() {
   const navigation = useNavigation();
   const styles = useDynamicStyles();
 
+<<<<<<< HEAD
   const openEmailClient2 = async () => {
     const email = 'textoecontexto@contato.ufsc.br';
+=======
+  const openEmailClient = async () => {
+    const email = 'elisiane.lorenzini@ufsc.br'; // Substitua pelo endereço de e-mail desejado
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
     const url = `mailto:${email}`;
   
     try {
@@ -23,10 +32,31 @@ export default function Ajuda() {
       if (supported) {
         await Linking.openURL(url);
       } else {
+<<<<<<< HEAD
         Alert.alert('Erro', 'Nenhum aplicativo de e-mail foi encontrado.');
       }
     } catch (error) {
       Alert.alert('Erro', 'Ocorreu um erro ao tentar abrir o cliente de e-mail.');
+=======
+        console.error('Não é possível abrir o cliente de e-mail.');
+      }
+    } catch (error) {
+      console.error('Erro ao abrir o cliente de e-mail:', error);
+    }
+  };
+  const openEmailClient2 = async () => {
+    const email = 'textoecontexto@contato.ufsc.br'; // Substitua pelo endereço de e-mail desejado
+    const url = `mailto:${email}`;
+  
+    try {
+      const supported = await Linking.canOpenURL(url);
+      if (supported) {
+        await Linking.openURL(url);
+      } else {
+        console.error('Não é possível abrir o cliente de e-mail.');
+      }
+    } catch (error) {
+>>>>>>> 36538e8c46eb20a50b6ad5d48a2777b622ff4a2d
       console.error('Erro ao abrir o cliente de e-mail:', error);
     }
   };
